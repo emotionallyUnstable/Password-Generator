@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+body {
+    background-color: #5e5a5a;
+    font-family: Oswald;
+}
+
+.generator__container {
+    margin-left: 750px;
+    margin-top: 200px;
+    width: 400px;
+    height: 500px;
+    border: 1px solid #000;
+    background-color: #9b2121;
+}
+
+.generator__name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+
+.generator__searcher {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input__searcher {
+    width: 340px;
+    height: 36px;
+    font-size: 20px;
+    background-color: #3d0808;
+    z-index: 1;
+    color: #5e5a5a;
+}
+
+
+.copy__btn-img {
+    width: 38px;
+    border: 2px solid #000;
+    border-color: #000 rgb(119, 119, 119) rgb(119, 119, 119) #3d0808;
+    background-color: #3d0808;
+    z-index: 2;
+    position: relative;
+    right: 2px;
+    top: 2px;
+}
+
+/*-------------------Start Settings of Password Generator---------------------------------------------*/
+
+.password-lenght__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+[class *="password"] {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    height: 50px;
+}
+
+.password-lenght__input {
+    width: 60px;
+    height: 15px;
+}
+
+/*-----------------------password generating button-----------*/
+
+.generate__btn {
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 300px;
+    height: 50px;
+    font-weight: 400;
+    font-size: 20px;
+    background-color: #5e5a5a;
+}
+
+/*-------------------------modal window-------------------------------*/
+
+.modal__container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .4s, visability .4s;
+    color: #9b2121;
+}
+
+.modal__box{
+    max-width: 500px;
+    padding: 45px;
+    z-index: 1;
+    background-color: #fff;
+    transform: scale(0);
+    transition: transform .8s;
+    background-color: #5e5a5a;
+    border: 1px solid #9b2121;
+}
+
+
+.modal__container.open {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal__container.open .modal__box{
+    transform: scale(1);
+}
+
+/*------------------------Modale close button----------------------*/
+
+.close__btn {
+    padding: 5px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.close__btn:hover {
+    background-color: #9b2121;
+}
+

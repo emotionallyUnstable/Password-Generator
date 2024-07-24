@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="generator__container">
+        <h1 class="generator__name">PASSWORD GENERATOR</h1>
+        <div class="generator__searcher">
+            <form action="">
+                <input id="searchId__input" class="input__searcher" type="text" placeholder="Waiting for your settings..." type="search">
+            </form>
+            <a id="copyBtnId" href="#" class="copy__btn"><img class="copy__btn-img" src="img/free-icon-copy-7465641.png" alt=""></a>
+        </div>
+
+        <div class="password-lenght__container">
+            <h1 class="password-lenght__name">Password Lenght</h1>
+            <input id="passLenghtId" class="password-lenght__input" type="number" >
+        </div>
+
+        <div class="password-uppercase__container">
+            <h1 class="password-uppercase__name">Include uppercase letters</h1>
+            <input id="passUpperId" class="password-uppercase__input" type="checkbox">
+        </div>
+
+        <div class="password-lowercase__container">
+            <h1 class="password-lowercase__name">Include lowercase letters</h1>
+            <input id="passLowerId" class="password-lowercase__input" type="checkbox">
+        </div>
+
+        <div class="password-numbers__container">
+            <h1 class="password-numbers__name">Include numbers</h1>
+            <input id="passNumberId" class="password-numbers__input" type="checkbox">
+        </div>
+
+        <div class="password-symbols__container">
+            <h1 class="password-symbols__name">Include symbols</h1>
+            <input id="passSymbolId" class="password-symbols__input" type="checkbox">
+        </div>
+
+        <button id="btnGenerateId" class="generate__btn">GENERATE PASSWORD</button>
+    </div>
+
+    <div id="modalId" class="modal__container">
+        <div class="modal__box">
+            <button class="close__btn" id="close-my-modal-btn"></button>
+            <h2>Please select at least one character type</h2>
+        </div>
+    </div>
+    
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
